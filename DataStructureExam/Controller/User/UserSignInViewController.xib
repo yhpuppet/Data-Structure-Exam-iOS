@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserSignInViewController" customModule="DataStructureExam" customModuleProvider="target">
+            <connections>
+                <outlet property="passwordErrorMessageLabel" destination="xcZ-In-Edr" id="J5s-VT-uij"/>
+                <outlet property="passwordTextField" destination="LHA-RE-Qme" id="k1L-e2-gqh"/>
+                <outlet property="studentNumberErrorMessageLabel" destination="HOG-bA-CVO" id="c9b-Xw-VRx"/>
+                <outlet property="studentNumberTextField" destination="l85-Fx-PD9" id="7AN-QP-K58"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="学生号" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l85-Fx-PD9" customClass="VYBottomLineTextField" customModule="DataStructureExam" customModuleProvider="target">
+                    <rect key="frame" x="20" y="202" width="335" height="34"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOG-bA-CVO">
+                    <rect key="frame" x="19.5" y="248.5" width="335" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LHA-RE-Qme" customClass="VYBottomLineTextField" customModule="DataStructureExam" customModuleProvider="target">
+                    <rect key="frame" x="20" y="283" width="335" height="34"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcZ-In-Edr">
+                    <rect key="frame" x="20" y="331.5" width="335" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLE-aP-PF3">
+                    <rect key="frame" x="162" y="391" width="51" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="登录"/>
+                    <connections>
+                        <action selector="userSignIn:" destination="-1" eventType="touchUpInside" id="BOo-H1-vEz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYx-gD-DA7">
+                    <rect key="frame" x="161.5" y="472" width="51" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="注册"/>
+                    <connections>
+                        <action selector="userSignUp:" destination="-1" eventType="touchUpInside" id="nlt-ak-JcI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="xcZ-In-Edr" firstAttribute="width" secondItem="LHA-RE-Qme" secondAttribute="width" id="6rR-1l-UBy"/>
+                <constraint firstItem="dLE-aP-PF3" firstAttribute="centerX" secondItem="xcZ-In-Edr" secondAttribute="centerX" id="71z-yp-nJG"/>
+                <constraint firstItem="KYx-gD-DA7" firstAttribute="top" secondItem="dLE-aP-PF3" secondAttribute="bottom" constant="39" id="AOA-i7-se7"/>
+                <constraint firstItem="l85-Fx-PD9" firstAttribute="centerX" secondItem="LHA-RE-Qme" secondAttribute="centerX" id="Aco-xW-F0c"/>
+                <constraint firstItem="xcZ-In-Edr" firstAttribute="top" secondItem="LHA-RE-Qme" secondAttribute="bottom" multiplier="1.02" constant="8" symbolic="YES" id="FS2-fj-zLq"/>
+                <constraint firstItem="l85-Fx-PD9" firstAttribute="width" secondItem="LHA-RE-Qme" secondAttribute="width" id="KpV-XH-zkZ"/>
+                <constraint firstItem="LHA-RE-Qme" firstAttribute="top" secondItem="HOG-bA-CVO" secondAttribute="bottom" multiplier="1.02" constant="8" symbolic="YES" id="O0B-i7-mOE"/>
+                <constraint firstItem="LHA-RE-Qme" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.9" id="QMW-xS-rYo"/>
+                <constraint firstItem="HOG-bA-CVO" firstAttribute="top" secondItem="l85-Fx-PD9" secondAttribute="bottom" multiplier="1.02" constant="8" symbolic="YES" id="ROx-DJ-4gg"/>
+                <constraint firstAttribute="trailing" secondItem="LHA-RE-Qme" secondAttribute="trailing" constant="20" symbolic="YES" id="SYg-lq-y1d"/>
+                <constraint firstItem="xcZ-In-Edr" firstAttribute="centerX" secondItem="LHA-RE-Qme" secondAttribute="centerX" id="V0n-cG-eYP"/>
+                <constraint firstItem="dLE-aP-PF3" firstAttribute="top" secondItem="xcZ-In-Edr" secondAttribute="bottom" constant="25" id="Zdn-II-879"/>
+                <constraint firstItem="HOG-bA-CVO" firstAttribute="width" secondItem="LHA-RE-Qme" secondAttribute="width" id="cg3-77-b80"/>
+                <constraint firstItem="l85-Fx-PD9" firstAttribute="height" secondItem="LHA-RE-Qme" secondAttribute="height" id="jqC-G6-S6g"/>
+                <constraint firstItem="HOG-bA-CVO" firstAttribute="centerX" secondItem="LHA-RE-Qme" secondAttribute="centerX" id="p4r-J2-QEQ"/>
+                <constraint firstItem="KYx-gD-DA7" firstAttribute="centerX" secondItem="dLE-aP-PF3" secondAttribute="centerX" id="uLf-fX-LPD"/>
+                <constraint firstItem="xcZ-In-Edr" firstAttribute="height" secondItem="LHA-RE-Qme" secondAttribute="height" id="xK8-YZ-n96"/>
+                <constraint firstItem="LHA-RE-Qme" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="zoN-aQ-Mn7"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="Dn4-Dw-q80" appends="YES" id="n1O-nv-SM7"/>
+            </connections>
+            <point key="canvasLocation" x="-784" y="-53"/>
+        </view>
+        <tapGestureRecognizer id="Dn4-Dw-q80">
+            <connections>
+                <action selector="tapView:" destination="-1" id="DJj-y3-dsk"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

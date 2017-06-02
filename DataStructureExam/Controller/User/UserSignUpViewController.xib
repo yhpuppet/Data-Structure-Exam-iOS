@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserSignUpViewController" customModule="DataStructureExam" customModuleProvider="target">
+            <connections>
+                <outlet property="sexSegmentedControl" destination="aiE-0G-Pzf" id="AvZ-dk-UHb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="学号" textAlignment="center" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="9hr-K6-H4e" customClass="VYBottomLineTextField" customModule="DataStructureExam" customModuleProvider="target">
+                    <rect key="frame" x="20" y="183" width="335" height="34"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yEg-7V-Eqb" customClass="VYBottomLineTextField" customModule="DataStructureExam" customModuleProvider="target">
+                    <rect key="frame" x="20" y="236" width="335" height="34"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="姓名" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DFi-WP-fhV" customClass="VYBottomLineTextField" customModule="DataStructureExam" customModuleProvider="target">
+                    <rect key="frame" x="20" y="291.5" width="335" height="34"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注册" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEn-SQ-HrW">
+                    <rect key="frame" x="162" y="418.5" width="51" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aiE-0G-Pzf" customClass="TTSegmentedControl" customModule="TTSegmentedControl">
+                    <rect key="frame" x="122.5" y="343.5" width="130" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="3le-2z-lsz"/>
+                        <constraint firstAttribute="height" constant="40" id="Hy6-3F-3LG"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="defaultTextColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="useGradient" value="NO"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="containerBackgroundColor">
+                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="thumbColor">
+                            <color key="value" red="0.8862745098" green="0.73333333329999995" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="thumbShadowColor">
+                            <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="useShadow" value="NO"/>
+                        <userDefinedRuntimeAttribute type="size" keyPath="padding">
+                            <size key="value" width="20" height="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yEg-7V-Eqb" secondAttribute="trailing" constant="20" symbolic="YES" id="8w1-Xc-BsA"/>
+                <constraint firstItem="DFi-WP-fhV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="FcF-wz-ymn"/>
+                <constraint firstItem="DFi-WP-fhV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-25" id="Kdx-YS-f8s"/>
+                <constraint firstItem="aiE-0G-Pzf" firstAttribute="centerX" secondItem="DFi-WP-fhV" secondAttribute="centerX" id="P5W-e5-MWP"/>
+                <constraint firstItem="yEg-7V-Eqb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="Pcr-e7-zXa"/>
+                <constraint firstItem="aiE-0G-Pzf" firstAttribute="top" secondItem="DFi-WP-fhV" secondAttribute="bottom" multiplier="1.03" constant="8" symbolic="YES" id="S8N-OC-2je"/>
+                <constraint firstItem="MEn-SQ-HrW" firstAttribute="centerX" secondItem="aiE-0G-Pzf" secondAttribute="centerX" id="SCp-DK-3Qv"/>
+                <constraint firstItem="DFi-WP-fhV" firstAttribute="top" secondItem="yEg-7V-Eqb" secondAttribute="bottom" multiplier="1.05" constant="8" symbolic="YES" id="SOY-Uo-LxF"/>
+                <constraint firstAttribute="trailing" secondItem="DFi-WP-fhV" secondAttribute="trailing" constant="20" symbolic="YES" id="WM9-78-MsR"/>
+                <constraint firstItem="9hr-K6-H4e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="YWK-ux-JPH"/>
+                <constraint firstItem="yEg-7V-Eqb" firstAttribute="top" secondItem="9hr-K6-H4e" secondAttribute="bottom" multiplier="1.05" constant="8" symbolic="YES" id="h5O-sf-vKV"/>
+                <constraint firstItem="MEn-SQ-HrW" firstAttribute="top" secondItem="aiE-0G-Pzf" secondAttribute="bottom" multiplier="1.07" constant="8" symbolic="YES" id="hms-uy-PAN"/>
+                <constraint firstAttribute="trailing" secondItem="9hr-K6-H4e" secondAttribute="trailing" constant="20" symbolic="YES" id="jvd-uG-cs7"/>
+                <constraint firstItem="DFi-WP-fhV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vRv-m9-9Fj"/>
+            </constraints>
+            <point key="canvasLocation" x="74" y="-118"/>
+        </view>
+    </objects>
+</document>
